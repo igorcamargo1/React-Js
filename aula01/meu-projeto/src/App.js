@@ -1,25 +1,20 @@
 import './App.css';
 import HelloWorld from './components/helloWord/HelloWorld';
+import SayMyName from './components/sayMyName/SayMyName';
+import Pessoa from './components/pessoa/Pessoa';
 
 function App() {
   
-  const name = 'Igor'
-  
-  const newName = name.toUpperCase()
-  
-  function sum(a, b){
-    return a + b
-  }
-
-  const url= "https://via.placeholder.com/150"
+  const nome = "Silvana"
 
   return (
-    <div/* aqui é usado o className, e não somente o class */ className="App">
-      <h1>Olá React, meu nome é {newName}</h1>
+    <div className="App">
       < HelloWorld/>
-      <p>Meu primeiro App</p>
-      <p>soma: {sum(1,2)}</p>
-      <img src={url} alt ="minha imagem"/>
+      <SayMyName nome="Igor"/>
+      <SayMyName nome="Rapha"/>
+      <SayMyName nome={nome}/>
+      <Pessoa nome="igor" idade="19" profissao="programador"
+      foto="https://via.placeholder.com/150"/>
     </div>
   )
 }
