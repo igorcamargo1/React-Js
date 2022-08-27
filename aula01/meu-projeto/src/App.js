@@ -3,6 +3,7 @@ import HelloWorld from './components/helloWord/HelloWorld';
 import SayMyName from './components/sayMyName/SayMyName';
 import Pessoa from './components/pessoa/Pessoa';
 import Frase from './components/frase/Frase';
+import List from './components/list/List';
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
       <SayMyName nome={nome}/>
       <Pessoa nome="igor" idade="19" profissao="programador"
       foto="https://via.placeholder.com/150"/>
+      <List/>
     </div>
   )
 }
