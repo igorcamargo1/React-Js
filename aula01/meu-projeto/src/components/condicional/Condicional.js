@@ -22,7 +22,7 @@ export default function Condicional(){
                 <button type='submit' onClick={enviarEmail}>Enviar email</button>
                 {userEmail &&( //"(condicional)se o 'userEmail' preenchido(&&), faça:'"
                     <div>
-                        <p>O email do usuário é: {userEmail}</p>
+                        <p>O email do usuário é:{userEmail}</p>
                         <button onClick={limparEmail}>limpar Email</button>
                     </div>
                 )}
