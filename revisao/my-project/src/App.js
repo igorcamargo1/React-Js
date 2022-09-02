@@ -1,16 +1,15 @@
 import React from 'react';
-import Cabecalho from './components/cabecalho/Cabecalho';
-import Carros from './components/carros/Carros';
-import Parceiros from './components/parceiros/Parceiros';
-
+import Lista from './components/listaAlunos/ListaAlunos'
 
 
 function App() {
+  
+  const alunos = ['Pedro', 'Antonio', 'João']
+  const alunoNovo = () => 'Fernanda'
+  
   return (
     <>
-      <Cabecalho/>
-      <Carros />
-      <Parceiros/>
+      <Lista alunos = {alunos} alunoNovo = {alunoNovo}/>
     </>
   );
 }
