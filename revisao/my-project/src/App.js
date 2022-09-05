@@ -1,17 +1,8 @@
-import React from 'react';
-import Lista from './components/listaAlunos/ListaAlunos'
+import React from "react";
+import './App.css'
 
-
-function App() {
-  
-  const alunos = ['Pedro', 'Antonio', 'João']
-  const alunoNovo = () => 'Fernanda'
-  
-  return (
-    <>
-      <Lista alunos = {alunos} alunoNovo = {alunoNovo}/>
-    </>
-  );
+export default function App(){
+  return(
+    <h1>Conteudo do app.js</h1>
+  )
 }
-
-export default App;
