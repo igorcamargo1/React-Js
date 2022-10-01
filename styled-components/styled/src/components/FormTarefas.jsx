@@ -3,7 +3,7 @@ import React from "react";
 export default function FormTarefas(props) {
     return (
         <div>
-            <form method="POST" onSubmit={props.AdicionarNovaTarefa}>
+            <form method="POST" onSubmit={props.adicionarNovaTarefa}>
                 <fieldset>
                     <legend>Tarefas</legend>
                     <div>
