@@ -5,8 +5,7 @@ import MainRoutes from './routes/MainRoutes'
 export default function App() {
   return (
     <div>
-      <h1>App</h1>
-      <Home></Home>
+      <Home/>
       <MainRoutes/>
     </div>
   )

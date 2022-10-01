@@ -9,23 +9,24 @@ export default function ListaTarefas() {
     const [tarefa, setTarefa] = useState([
         {
             titulo: "Lista de Pagamento",
-            setor: "Dep.vendas",
-            descricao: "Levantar os valores de vendas"
-        },
+            setor: "Dep. Vendas",
+            descricao: "Levantar os valores de Vendas."
+        }
+        ,
         {
-            titulo: "Planilha de salarios",
+            titulo: "Planilha de Salários",
             setor: "Dep. Pessoal",
-            descricao: "Gerar planilhas"
-        },
+            descricao: "Gerar Planilhas"
+        }
+        ,
         {
-            titulo: "Lanças notas",
+            titulo: "Lançar Notas do Challenger",
             setor: "Graduação",
-            descricao: "Lançar notas dos grupos no portal"
+            descricao: "Lançar notas dos grupos no portal Sprint 3."
         }
     ])
 
     const [nTarefa, setNTarefa] = useState({ "titulo": "", "setor": "", "descricao": "" })
-
 
     //CRIANDO UMA FUNÇÃO PARA ADICIONAR TAREFAS
     const addTarefa = (e) => {
@@ -36,24 +37,25 @@ export default function ListaTarefas() {
 
     const captura = (e) => {
         e.preventDefault()
-        const {name,value} = e.target
+
+        const { name, value } = e.target
 
         if (name === "titulo") {
             setNTarefa({ "titulo": value, "setor": nTarefa.setor, "descricao": nTarefa.descricao })
-        }
-        else if (name === "setor") {
+        } else if (name === "setor") {
             setNTarefa({ "titulo": nTarefa.titulo, "setor": value, "descricao": nTarefa.descricao })
-        }
-        else if (name === "descricao") {
+        } else if (name === "descricao") {
             setNTarefa({ "titulo": nTarefa.titulo, "setor": nTarefa.setor, "descricao": value })
         }
+
+
     }
 
     return (
         <div>
-            <p>lista de tarefas</p>
+            <p>Lista de Tarefas</p>
             <div>
-                <button onClick={addTarefa}>Add-tarefa</button>
+                <button onClick={addTarefa}>ADD-TAREFA</button>
             </div>
             <DivLista>
 
@@ -72,8 +74,9 @@ export default function ListaTarefas() {
                         descricao={t.descricao}
                     />
                 )}
+
             </DivLista>
-            <p>lista de tarefas</p>
+
         </div>
     )
 }
